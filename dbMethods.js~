@@ -1,8 +1,0 @@
-'use strict'
-
-const query = import('./dbQuery');
-
-export const saveRequest = async (req, res) => {
-	result = await query(`INSERT INTO Requests (path, search, hash, response) VALUES (${req.path}, ${req.search}, ${req.hash}, ${res})`);
-	return result;
-}
